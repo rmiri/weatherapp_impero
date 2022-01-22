@@ -1,0 +1,13 @@
+current directory: /Users/rmiriuk/Development/tech_test_interviews/impero_software/weather_app/vendor/bundle/ruby/2.7.0/gems/json-1.8.6/ext/json
+/Users/rmiriuk/.rvm/rubies/ruby-2.7.0/bin/ruby -I /Users/rmiriuk/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0 -r ./siteconf20220122-18231-1x2if4p.rb extconf.rb
+creating Makefile
+
+current directory: /Users/rmiriuk/Development/tech_test_interviews/impero_software/weather_app/vendor/bundle/ruby/2.7.0/gems/json-1.8.6/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/rmiriuk/Development/tech_test_interviews/impero_software/weather_app/vendor/bundle/ruby/2.7.0/gems/json-1.8.6/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/rmiriuk/Development/tech_test_interviews/impero_software/weather_app/vendor/bundle/ruby/2.7.0/gems/json-1.8.6/ext/json
+make "DESTDIR=" install
