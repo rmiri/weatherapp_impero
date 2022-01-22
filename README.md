@@ -6,10 +6,15 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
-```ruby 2.7.0```
-```Rails 6```
+
+``ruby 2.7.0``
+
+``rails 6.0.3``
+
 * System dependencies
-```bundle install``
+
+``bundle install``
+
 * Configuration
 
 * Database creation
