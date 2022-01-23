@@ -1,3 +1,10 @@
 <h1>Weather</h1>
-<p>Postcode</p>
+<p>Postcode</p> <%= @postcode %>
+<p>temperature</p>
 <%= @temperature['current']['temp_c'] %>
+
+<%= form_for :query do |form| %>
+  <%= form.label :postcode_query, "Postcode:" %>
+  <%= form.text_field :postcode_query %>
+  <%= form.submit "Search" %>
+<% end %>
