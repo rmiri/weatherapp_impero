@@ -1,9 +1,11 @@
 require 'pry'
 
 class WeatherController < ApplicationController
-include WeatherHelper
-  def index
-    if permited_params[:postcode_query]
+
+  include WeatherHelper
+  
+def index
+    if params[:query]
       @temperature = temperature(permited_params[:postcode_query])
       @postcode = permited_params[:postcode_query]
     else

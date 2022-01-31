@@ -15,6 +15,9 @@ Things you may want to cover:
 
 ``bundle install``
 
+
+``rails db:seed``
+
 * Configuration
 
 * Database creation
