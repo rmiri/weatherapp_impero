@@ -2,8 +2,8 @@ require 'httparty'
 
 module WeatherHelper
     
-    def temperature(postcode)
-        HTTParty.get(weather_api + postcode)
+    def api_request(location)
+        HTTParty.get(weather_api + location)
     end
 
     private

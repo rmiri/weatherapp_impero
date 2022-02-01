@@ -5,16 +5,16 @@ class WeatherController < ApplicationController
   include WeatherHelper
   
 def index
-
     if params[:query] && permited_params
-      @temperature = temperature(permited_params[:postcode_query])['current']['temp_c']
+      response = api_request(permited_params[:postcode_query])
+      @temperature = response['current']['temp_c']
       @postcode = permited_params[:postcode_query]
-      @temperature_feel = Weather.temperature_feeling(temperature)
+      @temperature_feel = Weather.temperature_feeling(@temperature)
     else
-      
-      @temperature = temperature('London')['current']['temp_c']
+      response = api_request('London')
+      @temperature = response['current']['temp_c']
       @postcode = "London"
-      @temperature_feel = Weather.temperature_feeling(temperature)
+      @temperature_feel = Weather.temperature_feeling(@temperature)
     end
   end
 

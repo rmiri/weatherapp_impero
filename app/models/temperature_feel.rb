@@ -7,9 +7,6 @@ class TemperatureFeel < ApplicationRecord
     end
 
     def self.temperature_feeling(temperature)
-        
-        binding.pry
-        
         if retrieve_last_entry.cold.to_f > temperature
             'cold'   
         elsif retrieve_last_entry.warm.to_f > temperature
