@@ -1,10 +1,14 @@
 class TemperatureFeelController < ApplicationController
-    def index
-        @feel = TemperatureFeel.last
-    end
-    
+
     def create
-        @temperature_feel = TemperatureFeel.new(params)
+        TemperatureFeel.create(permited_params)
+        redirect_to '/'
+    end
+
+    private
+
+    def permited_params 
+      params.require(:temperature_feel).permit(:cold,:warm,:hot)
     end
     
 end
