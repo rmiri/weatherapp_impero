@@ -1,0 +1,10 @@
+<% form_for model: @temperature_feel do |form| %>
+  <%= form.label :cold, "cold:" %>
+  <%= form.text_field :cold %>
+  <%= form.label :warm, "warm:" %>
+  <%= form.text_field :warm %>
+  <%= form.label :hot, "hot:" %>
+  <%= form.text_field :hot %>
+  <%= form.submit "Submit" %>
+<% end %>
+
