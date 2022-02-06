@@ -1,0 +1,26 @@
+<h1>Weather</h1>
+</br>
+
+<h2> What are your definitions for Hot, Warm and Cold weather? </h2>
+</br>
+<%= form_for @temperature_feel do |form| %>
+  <%= form.label :cold, "cold:" %>
+  <%= form.text_field :cold %>
+  <%= form.label :warm, "warm:" %>
+  <%= form.text_field :warm %>
+  <%= form.label :hot, "hot:" %>
+  <%= form.text_field :hot %>
+  <%= form.submit "Submit" %>
+<% end %>
+</br>
+<h2> Check the temperature in your location</h2>
+</br>
+<p> Today the temperature is <%= @temperature %> C in <%= @postcode %>,</p>
+<p> oh my, this is very <%= @temperature_feeling %> </p>
+
+<%= form_for :query do |form| %>
+  <%= form.label :postcode_query, "Postcode:" %>
+  <%= form.text_field :postcode_query %>
+  <%= form.submit "Search" %>
+<% end %>
+

@@ -1,6 +1,7 @@
-class TemperatureFeelController < ApplicationController
+class TemperatureFeelsController < ApplicationController
 
     def create
+
         TemperatureFeel.create(permited_params)
         redirect_to '/'
     end
